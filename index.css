@@ -1,0 +1,43 @@
+.pokedex-entry{
+    width:10rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.img-container{
+    background-color: lightgrey;
+    border-radius: 0.25rem;
+}
+
+.img-container img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.type-grass{
+    background-color: #9bcc50;
+}
+.type-poison{
+    background-color: #b97fc9;
+    color:white;
+}
+.type-fire{
+    background-color: #f08030;
+    color:white;
+}
+.type{
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+
+.pokedex-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.type-info{
+    display:flex;
+    gap:0.25rem;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheets" type="text/css" href="index.css">
+    <title>Pokedex</title>
+    <script defer src="index.js"></script>
+    <style>
+       .pokedex{
+           display: flex;
+           gap: 1rem;
+           flex-wrap: wrap;
+       }
+        .pokedex-entry{
+    width:10rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+.img-container{
+    background-color: lightgrey;
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: center;
+}
+
+.img-container img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.type-grass{
+    background-color: #9bcc50;
+}
+.type-poison{
+    background-color: #b97fc9;
+    color:white;
+}
+.type-fire{
+    background-color: #f08030;
+    color:white;
+}
+.type-water{
+    background-color: #303af0;
+    color:white;
+}
+.type-flying{
+    background-color: #82846dc6;
+    color:white;
+}
+.type-bug{
+    background-color: #207128;
+    color:white;
+}
+.type{
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    width: 50%;
+    text-align: center;
+}
+
+.pokedex-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+}
+
+.type-info{
+    display:flex;
+    gap:0.25rem;
+}
+    </style>
+</head>
+<body>
+    <h1>Pokedex</h1>
+    <div class="pokedex">
+        <template id="pokemon-template">
+            <div class="pokedex-entry">
+                <div class="img-container">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" alt="Bulbasaur">
+                </div>
+            
+                <div class="pokedex-info">
+                    <div class="number">#001</div>
+                    <div class="name">Bulbasaur</div>
+                    <div class="type-info">
+                        <span class="type type-one">Grass</span>
+                        <span class="type type-two">Poison</span>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </div>
+</body>
+</html>
